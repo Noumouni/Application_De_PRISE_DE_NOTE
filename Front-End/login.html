@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notely</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    </head>
+
+<body>
+
+  <div class="flex-items">
+  <div class="logo">
+    <i class="fa-solid fa-note-sticky"></i>
+  </div>
+  <span>Notely</span>
+  <p>Vos notes, partagées en temps réel</p>
+</div>
+
+<main class="page-sign-up">
+
+  <div class="connexion-bloc">
+    <div class="button-connexion-inscription">
+      <button class="btn_1">Connexion</button>
+      <button class="btn_2">Inscription</button>
+    </div>
+   
+     <form action="" method="post" id="form-connexion">
+      <label for="email">ADRESSE E-MAIL</label>
+      <input type="email" 
+       name="email" 
+       id="email"
+       placeholder="Vous@example.com">
+  
+     <label for="password">MOT DE PASSE</label>
+     <input type="password"
+      name="password" 
+      id="password" 
+      placeholder="••••••••">
+
+     <button type="submit" class="btn-login">Se connecter <i class="fa-solid fa-arrow-right"></i></button>
+    </form>
+
+   <p>ou continuer avec </p>
+   <button type="button" class="btn-google">
+    <img src="Asset/Google_logo.svg.png" width="18">
+    <span>Continuer avec Google</span>
+  </button>
+<br>
+<!-- Formulaire 2 : Inscription (caché au départ) -->
+
+  <form id="form-inscription" >
+    <label for="nom">NOM COMPLET</label>
+    <input type="text"
+     id="nom"
+      placeholder="Alice Dupont">
+  
+    <label for="email-inscription">ADRESSE E-MAIL</label>
+    <input type="email" 
+    id="email-inscription" 
+    placeholder="vous@example.com">
+  
+    <label for="password-inscription">MOT DE PASSE</label>
+    <input type="password"
+     id="password-inscription"
+      placeholder="••••••••">
+  
+    <button type="submit" class="btn-login">Créer mon compte →</button>
+  </form>
+  </div> 
+
+</main>
+
+
+</body>
+</html>
