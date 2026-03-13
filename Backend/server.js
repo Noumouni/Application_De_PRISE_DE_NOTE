@@ -1,5 +1,8 @@
 const http = require('http');
-const server= http.createServer((req,res)=>
-res.end('Le server tourne sur le port 3000 !')
-)
+const app = require('./app') //importaion du fichier express dans node 
+
+
+app.set('port', process.env.PORT || 3001)
+const server= http.createServer(app);
+
 server.listen(process.env.PORT || 3001)

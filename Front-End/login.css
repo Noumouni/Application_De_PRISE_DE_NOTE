@@ -8,7 +8,7 @@ body{
  background-color:#F5F0E8;
 }
 
-.logo{
+.logo-mark{
 background-color: black;
 width: 100px;
 border-radius: 17px;
@@ -30,7 +30,7 @@ justify-content: center;
 align-items: center;
 margin-top: 30px;
 font-weight: 900;
-font-size: 50px;
+font-size: 20px;
 font-family: 'DM_Serif_Display';
 }
 p{
@@ -40,7 +40,7 @@ font-weight: 600;
 font-size:20px ;
 letter-spacing: 0.1em
 }
-.connexion-bloc{
+.login-card{
     background-color:white ;
     width:550px ;
     height:700px ;
@@ -55,7 +55,7 @@ letter-spacing: 0.1em
     border: 1px solid #E0D9CE;
 
 }
-.button-connexion-inscription{
+.tab-switch{
 width: 90%;
 margin: 25px auto;
 display: flex;
@@ -65,7 +65,7 @@ padding: 10px;
 border-radius: 15px;
 cursor: pointer;
 }
-.btn_1{
+.btn_connexion{
 border: none ;
 font-size: 20px;
 color: #78716C;
@@ -74,7 +74,7 @@ padding: 12px 55px 12px 55px;
 border-radius: 10px;
 
 }
-.btn_2{
+.btn_sign_up{
     border: none ;
     font-size: 20px;
     color: #78716C;
@@ -132,13 +132,18 @@ border-radius: 10px;
     margin: 50px auto;
     font-size: 20px;
     cursor: pointer;
+    display: block;
     }
-
-    .btn-google{
+     .divider{
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+     }
+    .btn-oauth{
         padding-bottom: 20px;
         border: 1px solid #E0D9CE;
         border-radius: 10px;
-        margin: 10px auto;
+        margin: 50px auto;
         display: block;
         background-color: white;
         width: 80%;
@@ -148,7 +153,7 @@ border-radius: 10px;
         align-items: center;
         gap: 8px;
     }
-    .btn-google img{
+    .btn-oauth img{
         margin-top: 27px;
         font-size: 18px;
     }
