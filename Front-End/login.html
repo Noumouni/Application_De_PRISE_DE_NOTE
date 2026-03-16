@@ -14,7 +14,8 @@
     </head>
 
 <body>
-
+  <main class="sign_up_page">
+    
   <div class="flex-items">
   <div class="logo-mark">
     <i class="fa-solid fa-note-sticky"></i>
@@ -23,47 +24,59 @@
   <p>Vos notes, partagées en temps réel</p>
 </div>
 
-<main class="sign_up_page">
 
-  <div class="login-card">
+
+  <div class="login">
 
     <div class="tab-switch">
       <button class="btn_connexion">Connexion</button>
       <button class="btn_sign_up">Inscription</button>
     </div>
 
-   <div class="form-login">
+ <form action="" method="post" class="login__form">
 
-   <div class="form-group">
-    <form action="" ></form>
-      <label for="email">ADRESSE E-MAIL</label>
-      <input type="email" 
-       name="email" 
-       id="email"
-       placeholder="Vous@example.com">
-      </div>
+  <div class="login_input_group">
+    <label for="email" class="login_label">Entrez votre email </label>
+   <div class="login-icon-input-container">
+     <input type="email"
+     id="email"
+     name="email"
+      placeholder="vous@example.com"
+      maxlength="24"
+      class="login_input">
+   </div>
+  </div>
 
-      <div class="form-group">
-     <label for="password">MOT DE PASSE</label>
+  <div class="login_input_group">
+    <label for="email" class="login_label">Entrez votre mot de passe</label>
+   <div class="login-icon-input-container">
      <input type="password"
-      name="password" 
-      id="password" 
-      placeholder="••••••••">
-     </div>
-
-    <button type="submit" class="btn-login">Se connecter <i class="fa-solid fa-arrow-right"></i></button>
+     id="password"
+     name="password"
+      placeholder="vous@example.com"
+      maxlength="24"
+      class="login_input">
+   </div>
+   
+    </div>
+    
+    <button type="submit" class="login_submit_button">Se connecter <i class="fa-solid fa-arrow-right"></i></button>
     <div class="divider">ou continuer avec </div>
 
-   <button type="button" class="btn-oauth">
+   <button type="button" class="btn-google">
     <img src="Asset/Google_logo.svg.png" width="18">
     <span>Continuer avec Google</span>
     </button>
 
+   </form>
+    </div>
+    
 <!-- Formulaire 2 : Inscription (caché au départ) -->
-  <div class="sign_up" style="display: none;">
+  <div class="sign_up" >
 
     <h1 class="sign_up_title">Inscrivez-Vous</h1>
     <form action="" class="sign_up__form">
+
       <div class="sign_up_input_group">
        <label for="username" class="sign_up_label">Nom d'utilisateur</label>
       <div class="sign-up-icon-input-container">
@@ -73,9 +86,11 @@
          placeholder="Alice Dupont"
          maxlength="24"
          class="sign_up_input">
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg>
+        <img src="Asset/check.svg" alt="" class="sign-up-icon"> 
       </div>
+
        <p class="sign_up_error_message">Choisissez un pseudo contenant au moins 3 caractères</p>
+
       </div>
 
 
@@ -90,9 +105,9 @@
           placeholder="vous@example.com"
           maxlength="24"
           class="sign_up_input">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg>
+          <img src="Asset/check.svg" alt="" class="sign-up-icon">
        </div>
-        <p class="sign_up_error_message">Rentrez un email valide /p>
+        <p class="sign_up_error_message">Rentrez un email valide </p>
        </div>
 
 
@@ -107,7 +122,7 @@
           placeholder="Votre mot de passe"
           maxlength="24"
           class="sign_up_input">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg>
+          <img src="Asset/check.svg" alt="" class="sign-up-icon">
        </div>
         <p class="sign_up_error_message">Respectez les condition du mot de passe</p>
        </div>
@@ -122,6 +137,8 @@
           placeholder="Confirmez le mot de passe"
           maxlength="24"
           class="sign_up_input">
+          <img src="Asset/check.svg" alt="" class="sign-up-icon">
+
        </div>
         <p class="sign_up_error_message">Les mots de passe ne sont identique </p>
        </div>
