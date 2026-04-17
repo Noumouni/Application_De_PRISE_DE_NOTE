@@ -1,20 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-<main>
-    <header>
-
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="app__header">
+      <div class="app__logo">
+        <div class="dot"></div>
+        <span class="logo">Notely</span>
+      </div>
+      <div class="header__action">
+        <div class="header__action__btn">
+          <i class="fa-regular fa-bell " ></i>
+        </div>
+        <div class="header__action__avatar">AD</div>
+      </div>
     </header>
-    <aside class="sidebar">
 
+     <div class="app__layout">
+     <aside class="sidebar">
+      <div class="sidebar__content">
+        <div class="sidebar__content__navigation">
+          <p class="sidebar__content__title">NAVIGATION</p>
+          <div class="navigation__content__active navigation__content">
+            <i class="fa-solid fa-qrcode"></i>
+            <p>Toutes les notes</p>
+            <span class="active">12</span>
+          </div>
+
+          <div class="navigation__content">
+            <i class="fa-regular fa-user"></i>
+            <p>Partagées avec moi</p>
+            <span class="number" >4</span>
+          </div>
+
+          <div class="navigation__content">
+            <i class="fa-regular fa-star"></i>
+            <p>Favoris</p>
+            <span class="number" >3</span>
+          </div>
+
+          <div class="navigation__content">
+            <i class="fa-regular fa-trash-can"></i>
+            <p>Corbeille</p>
+          </div>
+        </div>
+
+        <!-- Workspaces  -->
+
+        <div class="sidebar__workSpaces">
+          <p class="sidebar__workSpaces__title">WORKSPACES</p>
+
+          <div class="sidebar__workSpaces__content">
+          <div class="Workspaces__bloc">
+            <span class="dot__WorkSpaces__Green"></span>
+            <p>Projet Startup</p>
+          </div>
+          <div class="Workspaces__bloc">
+            <span class="dot__WorkSpaces__orange"></span>
+            <p>Personnel</p>
+          </div>
+          <div class="Workspaces__bloc">
+            <span class="dot__WorkSpaces__blue"></span>
+            <p>Équipe Design</p>
+          </div>
+          </div>
+        </div>
+        <!-- Tags  -->
+        <div class="sidebar__Tags">
+          <p class="sidebar__Tags__title">TAGS</p>
+          <div class="sidebar__Tags__content">
+            <div class="dot__bloc">
+              <div class="dot__bloc__items">
+              <span class="dot__Tags"></span>
+              <p>Idées</p>
+            </div>
+              <span class="number">5</span>
+            </div>
+            <div class="dot__bloc">
+              <div class="dot__bloc__items">
+                <span class="dot__Tags"></span>
+                <p>Urgent</p>
+              </div>
+              <span class="number">2</span>
+            </div>
+            <div class="dot__bloc">
+              <div class="dot__bloc__items">
+                <span class="dot__Tags"></span>
+                <p>Référence</p>
+              </div>
+              <span class="number">3</span>
+            </div>
+
+            <div class="dot__bloc">
+              <div class="dot__bloc__items">
+                <span class="dot__Tags"></span>
+                <p>Archive</p>
+              </div>
+              <span class="number">7</span>
+            </div>
+            </div>
+        </div>
+      </div>
     </aside>
-</main>
-    
-</body>
+
+    <main class="main-page">
+        <div class="All__note">
+            <h1 class="All__note__title">Toutes les notes</h1>
+            <div class="All__note__actions">
+            <div class="All__note__search__icone">
+            <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search"
+               name="search" id="search"
+                placeholder="Rechercher une note..."
+                class="search__input">
+              </div>
+              <button class="Add__note">
+                <i class="fa-solid fa-plus"></i>
+                <span>Nouvelle note</span>
+              </button>
+            </div>
+             </div>
+
+
+             <div class="Cards">
+
+                <div class="card">
+                    <span class="Tags__idea Tags">idées</span>
+                    <h2  class="card__title">Architecture microservices pour le MVP</h2>
+                    <p>Réflexions sur la décomposition en services indépendants. API Gateway central, communication via événements...</p>
+                        <hr>
+                        <div class="Icone__bottom">
+                            <span>Il y a 2h</span>
+                            <div class="Icone">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                      </div>
+
+                <div class="card">
+                  <span class="Tags__Urgent Tags" >Urgent</span>
+                    <h2 class="card__title">Réunion client — Notes & actions</h2>
+                    <p>Réflexions sur la décomposition en services indépendants. API Gateway central, communication via événements...</p>
+                        <hr>
+                        <div class="Icone__bottom">
+                            <span>hier</span>
+                            <div class="Icone"> 
+                          
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </div>
+                </div>
+                <div class="card">
+                  <span class="Tags__reference Tags">Réference</span>
+                  <h2 class="card__title">Architecture microservices pour le MVP</h2>
+                  <p>Réflexions sur la décomposition en services indépendants. API Gateway central, communication via événements...</p>
+                      <hr>
+                      <div class="Icone__bottom">
+                          <span>3 Mars</span>
+                          <div class="Icone">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                          <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                      </div>
+                </div>
+                <div class="card">
+                  <span class="Tags__Archive Tags">Archive</span>
+                  <h2 class="card__title">Architecture microservices pour le MVP</h2>
+                  <p>Réflexions sur la décomposition en services indépendants. API Gateway central, communication via événements...</p>
+                      <hr>
+                      <div class="Icone__bottom">
+                          <span>28 Fevrier</span>
+                          <div class="Icone">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                          </div>
+                      </div>
+                </div>
+
+                <div class="card__Add__Note">
+                  <button class="btn__card" >
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Nouvelle note</span>
+                  </button>
+              
+                 </div>
+                </div>
+             </div>
+    </main>
+    </div>
+  </body>
 </html>

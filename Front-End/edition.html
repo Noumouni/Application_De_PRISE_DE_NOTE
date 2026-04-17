@@ -4,8 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<link rel="stylesheet" href="edition.css">
 </head>
 <body>
+    <header class="edition__header" >
+     <div class="btn__header__left">
+        
+       <a href="Index.html"> <button class="btn__back"> <i class="fa-solid fa-arrow-left"></i>Retour</button></a> 
+       <div class="btn__header__title">
+       <h1>Architecture microservices pour le MVP</h1>
+    </div>
+     </div>
+     <div class="btn__header__right">
+        <button class="btn__share" >
+        <i class="fa-solid fa-share"></i>
+        Partager
+        </button>
+        <button class="btn__save">
+        <i class="fa-solid fa-check"></i>
+        Enregistrez
+        </button>
+     </div>
+    </header>
+
+    <div class="app__layout">
+
+    <aside class="sidebar">
     
+    <div class="sidebar__section">
+        <h1 class="sidebar__section__title">TAGS</h1>
+        <div class="tags__list">
+            <span>Idées</span>
+            <span>Architecture</span>
+            <span>+ Tag</span>
+        </div>
+    </div>
+
+    <div class="sidebar__section">
+     <h1 class="sidebar__section__title">Collaborateurs</h1>
+     <div class="share-item">
+        <div class="share-avatar">AD</div>
+        <div class="share-info">
+          <div class="share-name">Alice Dupont</div>
+          <div class="share-role">Propriétaire</div>
+     </div>
+    </div>
+
+    <div class="share-item">
+        <div class="share-avatar">MR</div>
+        <div class="share-info">
+          <div class="share-name">Marc Renard</div>
+          <div class="share-role">Éditeur</div>
+     </div>
+     <button class="share-remove">×</button>
+    </div>
+
+    <div class="share-item">
+        <div class="share-avatar" >JL</div>
+        <div class="share-info">
+          <div class="share-name">Julie Leblanc</div>
+          <div class="share-role">Lecteur</div>
+        </div>
+        <button class="share-remove">×</button>
+      </div>
+
+      <div class="share-row">
+        <input class="share-input" placeholder="email@exemple.com">
+        <button class="share-btn">+</button>
+      </div>
+      </div>
+
+
+    <div class="sidebar__section">
+      <h1 class="sidebar__section__title">HISTORIQUE</h1>
+     <div class="dot"></div>
+     <div>
+      <div>Version actuelle</div>
+      <span>Aujourd'hui 15h12 </span>
+     </div>
+
+     <div class="dot"></div>
+     <div>
+      <div>Version actuelle</div>
+      <span>Aujourd'hui 15h12 </span>
+     </div>
+
+     <div class="dot"></div>
+     <div>
+      <div>Version actuelle</div>
+      <span>Aujourd'hui 15h12 </span>
+     </div>
+ 
+    </div>
+
+    </aside>
+    <main>
+
+
+      <div class="card">
+        <div>
+        <h1 class="card__title">Architecture microservices pour le M</h1>
+        <p>Ce document présente nos réflexions sur la décomposition de l'application en services indépendants. L'objectif est de garantir une scalabilité horizontale dès le lancement.</p>
+        <h2 >Services principaux</h2>
+        <p> API Gateway — point d'entrée unique, authentification JWT, rate limiting <br>
+            User Service — gestion des comptes, profils et workspaces <br>
+            Note Service — CRUD des notes, versioning, recherche full-text <br>
+            Notification Service — événements in-app, e-mails, mentions <br>
+            </p>
+        <h2>Communication inter-services</h2>
+        <p>Les services communiquent via événements asynchrones pour les opérations non-critiques, et en appels REST synchrones pour les requêtes nécessitant une réponse immédiate.</p>
+    </div>
+      </div>
+    </main>
+  
+</div>
 </body>
 </html>

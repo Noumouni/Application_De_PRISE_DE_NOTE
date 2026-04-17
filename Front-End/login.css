@@ -7,6 +7,15 @@ padding: 0;
 box-sizing: border-box;
 
 }
+:root {
+    --cream: #F5F0E8;
+    --ink: #1C1917;
+    --sage: #4A7C59;
+    --sage-light: #E8F0EA;
+    --warm: #C4722A;
+    --muted: #78716C;
+    --border: #E0D9CE;
+  }
 body{
     font-family:sans-serif ;
 
@@ -19,8 +28,7 @@ body{
 
 .logo-mark{
 background-color: black;
-width: 100px;
-border-radius: 17px;
+width: 90px;
 margin: auto;
 margin-top: 30px;
 box-shadow: 4px 4px 0px #4A7C59;
@@ -294,6 +302,7 @@ display: none;
     padding: 25px;
 
 }
+
  
 
 

@@ -1,0 +1,124 @@
+*,
+::after,
+::before
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+  :root {
+    /* Couleurs principales */
+    --cream: #F5F0E8;
+    --ink: #1C1917;
+    --White: #FFFFFF;
+    --sage: #4A7C59;
+    --sage-light: #E8F0EA;
+    --warm: #C4722A;
+    --warm-light: #FDF0E3;
+    --muted: #78716C;
+    --border: #E0D9CE;
+    --danger: #DC2626;
+  
+    /* Couleurs des tags */
+    --tag-idees: #4A7C59;
+    --tag-idees-bg: #E8F0EA;
+  
+    --tag-urgent: #C4722A;
+    --tag-urgent-bg: #FDF0E3;
+  
+    --tag-reference: #4A90C4;
+    --tag-reference-bg: #EBF5FF;
+  
+    --tag-archive: #8B7EC8;
+    --tag-archive-bg: #F3F0FF;
+  }
+
+
+  .edition__header{
+        position: sticky;
+          top: 0;
+          z-index: 50;
+          background-color: var(--White);
+          width: 100%;
+          padding: 0 24px;
+          height: 80px;
+          border-bottom: 1.5px solid var(--border);
+          display: flex;
+          justify-content: space-between;
+        }
+        .btn__header__left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .btn__header__right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           gap: 15px;
+        }
+        .btn__save{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: var(--sage);
+        color: var(--White);
+        }
+        .btn__share{
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            color: var(--muted);
+            background-color: var(--cream);
+            width: 130px;
+
+        }
+        .btn__back{
+         padding: 10px;
+        border-radius: 5px;
+        border: none;
+        }
+
+  main{
+    background: var(--cream);
+    flex: 1; 
+    padding: 28px 32px;
+    
+    }
+    .app__layout{
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    .sidebar{
+     width: 300px;
+     height: calc(100vh - 80px);
+     position: sticky;
+     top: 0;
+     right: 0;
+     background-color: var(--White);
+     border-right: 1.5px solid var(--border);
+     overflow-y: auto;
+     
+    }
+    .card{
+        background-color: var(--White);
+        padding: 80px;
+        border-radius: 20px;
+    }
+    h1{
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--muted);
+        
+    }
+    hr{
+    border: 1px solid var(--border);  
+    }
+    .tags__content{
+      
+        
+    }
