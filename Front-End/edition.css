@@ -47,6 +47,10 @@ box-sizing: border-box;
           border-bottom: 1.5px solid var(--border);
           display: flex;
           justify-content: space-between;
+          height: 100px;
+        }
+        .header__title{
+          font-size: 30px;
         }
         .btn__header__left{
             display: flex;
@@ -61,25 +65,58 @@ box-sizing: border-box;
            gap: 15px;
         }
         .btn__save{
-        padding: 10px;
-        border-radius: 5px;
+        padding: 18px;
+        border-radius: 10px;
         border: none;
         background-color: var(--sage);
         color: var(--White);
+        width: 182px;
+        font-size: 20px;
+        font-weight: 800;
+
         }
         .btn__share{
             padding: 15px;
-            border-radius: 15px;
-            border: none;
-            color: var(--muted);
+            border-radius: 35px;
             background-color: var(--cream);
-            width: 130px;
+            width: 168px;
+            font-size: 20px;
+            font-weight: 400;
+            border: 1px solid var(--border);
+            color: var(--muted);
+            
 
         }
+        .btn__share:hover{
+          border: 2px solid var(--sage);
+          color: var(--sage);
+        }
         .btn__back{
-         padding: 10px;
-        border-radius: 5px;
+        padding: 15px;
+        border-radius: 8px;
         border: none;
+        background: transparent;
+        width: 104px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--muted);
+        }
+         a{
+          text-decoration: none;
+        }
+        .btn__back:hover{
+          background-color: var(--cream);
+        }
+        .btn__back::after{
+          content: '';
+          height: 1;
+          width: 2px;
+          background: var(--border);
+
         }
 
   main{
@@ -94,7 +131,7 @@ box-sizing: border-box;
 
     }
     .sidebar{
-     width: 300px;
+     width: 360px;
      height: calc(100vh - 80px);
      position: sticky;
      top: 0;
@@ -102,23 +139,87 @@ box-sizing: border-box;
      background-color: var(--White);
      border-right: 1.5px solid var(--border);
      overflow-y: auto;
+     border-left: 2px solid var(--border);
+     padding: 22px;
      
+    }
+    .sidebar__section__title{
+      color: var(--muted);
+      font-size: 20px;
+      margin: 20px 20px;
+    }
+    .tags__list{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .tags__list1{
+      background-color: var(--tag-idees-bg);
+    }
+    .tags__list2{
+      background-color: var(--tag-reference-bg);
+    }
+    .tags__list3{
+      color: var(--muted);
+      background-color: var(--cream);
+      border: 1.5px dotted var(--muted);
+    }
+    .tags__list span{
+
+      border-radius: 10px;
+      padding: 8px 11px;
+    }
+    .share-item{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .share-item-info{
+    display: flex;
+    gap: 20px;
+    }
+    .share-avatar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 38px;
+      width: 38px;
+      border-radius: 50%;
+      background-color: var(--tag-urgent);
+      color: var(--White);
+      font-weight: 500;
+    }
+    .share-remove{
+      border-radius: 25%;
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--border);
+      background-color: var(--White);
+      color: var(--muted);
+    }
+    .share-row{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px 0;
+    }
+    .share-input{
+      padding: 14px 56px ;
+      border-radius: 8px;
+      background-color: var(--cream);
     }
     .card{
         background-color: var(--White);
         padding: 80px;
         border-radius: 20px;
     }
-    h1{
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--muted);
-        
+    .card__title{
+
     }
+   
     hr{
     border: 1px solid var(--border);  
     }
-    .tags__content{
-      
-        
-    }
+    

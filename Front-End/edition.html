@@ -19,7 +19,7 @@
         
        <a href="Index.html"> <button class="btn__back"> <i class="fa-solid fa-arrow-left"></i>Retour</button></a> 
        <div class="btn__header__title">
-       <h1>Architecture microservices pour le MVP</h1>
+       <h1 class="header__title">Architecture microservices pour le MVP</h1>
     </div>
      </div>
      <div class="btn__header__right">
@@ -33,6 +33,33 @@
         </button>
      </div>
     </header>
+   
+      <div class="editor-main">
+        <div class="toolbar">
+          <button class="toolbar-btn active"><b>B</b></button>
+          <button class="toolbar-btn"><i>I</i></button>
+          <button class="toolbar-btn"><u>S</u></button>
+          <div class="toolbar-sep"></div>
+          <button class="toolbar-btn">H1</button>
+          <button class="toolbar-btn">H2</button>
+          <div class="toolbar-sep"></div>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/><circle cx="4" cy="6" r="1" fill="currentColor"/><circle cx="4" cy="12" r="1" fill="currentColor"/><circle cx="4" cy="18" r="1" fill="currentColor"/></svg>
+          </button>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="10" y1="6" x2="21" y2="6"/><line x1="10" y1="12" x2="21" y2="12"/><line x1="10" y1="18" x2="21" y2="18"/><path d="M4 6h1v4"/><path d="M4 10h2"/><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+          </button>
+          <div class="toolbar-sep"></div>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </button>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </button>
+          <div class="toolbar-sep"></div>
+          <button class="toolbar-btn">↩</button>
+          <button class="toolbar-btn">↪</button>
+        </div>
 
     <div class="app__layout">
 
@@ -41,46 +68,53 @@
     <div class="sidebar__section">
         <h1 class="sidebar__section__title">TAGS</h1>
         <div class="tags__list">
-            <span>Idées</span>
-            <span>Architecture</span>
-            <span>+ Tag</span>
+            <span class="tags__list1">Idées</span>
+            <span class="tags__list2">Architecture</span>
+            <span class="tags__list3">+ Tag</span>
         </div>
     </div>
-
+ <hr>
     <div class="sidebar__section">
      <h1 class="sidebar__section__title">Collaborateurs</h1>
+
      <div class="share-item">
+         <div class="share-item-info">
         <div class="share-avatar">AD</div>
         <div class="share-info">
           <div class="share-name">Alice Dupont</div>
-          <div class="share-role">Propriétaire</div>
+          <span class="share-role">Propriétaire</span>
+        </div>
      </div>
     </div>
-
+    <hr>
     <div class="share-item">
+         <div class="share-item-info">
         <div class="share-avatar">MR</div>
         <div class="share-info">
           <div class="share-name">Marc Renard</div>
-          <div class="share-role">Éditeur</div>
+          <span class="share-role">Éditeur</span>
      </div>
+    </div>
      <button class="share-remove">×</button>
     </div>
-
+  <hr>
     <div class="share-item">
+      <div class="share-item-info">
         <div class="share-avatar" >JL</div>
         <div class="share-info">
           <div class="share-name">Julie Leblanc</div>
-          <div class="share-role">Lecteur</div>
+          <span class="share-role">Lecteur</span>
         </div>
+      </div>
         <button class="share-remove">×</button>
       </div>
-
+ <hr>
       <div class="share-row">
         <input class="share-input" placeholder="email@exemple.com">
         <button class="share-btn">+</button>
       </div>
       </div>
-
+  <hr>
 
     <div class="sidebar__section">
       <h1 class="sidebar__section__title">HISTORIQUE</h1>
@@ -112,15 +146,20 @@
         <div>
         <h1 class="card__title">Architecture microservices pour le M</h1>
         <p>Ce document présente nos réflexions sur la décomposition de l'application en services indépendants. L'objectif est de garantir une scalabilité horizontale dès le lancement.</p>
+        </div>
+        <div>
         <h2 >Services principaux</h2>
         <p> API Gateway — point d'entrée unique, authentification JWT, rate limiting <br>
             User Service — gestion des comptes, profils et workspaces <br>
             Note Service — CRUD des notes, versioning, recherche full-text <br>
             Notification Service — événements in-app, e-mails, mentions <br>
             </p>
+          </div>
+          <div>
         <h2>Communication inter-services</h2>
-        <p>Les services communiquent via événements asynchrones pour les opérations non-critiques, et en appels REST synchrones pour les requêtes nécessitant une réponse immédiate.</p>
+      <p>Les services communiquent via événements asynchrones pour les opérations non-critiques, et en appels REST synchrones pour les requêtes nécessitant une réponse immédiate.</p>
     </div>
+    div
       </div>
     </main>
   

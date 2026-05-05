@@ -11,8 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    </head>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
 
 <body>
   <main class="sign_up_page">
@@ -31,17 +31,17 @@
   <div class="login">
 
     <div class="tab-switch">
-      <button class="btn_connexion">Connexion</button>
-      <button class="btn_sign_up">Inscription</button>
+      <button class="btn_connexion"  id="btn-connexion">Connexion</button>
+      <button class="btn_sign_up" id="btn-inscription">Inscription</button>
     </div>
 
- <form action="" method="post" class="login__form">
-
+ <form action="" method="post" class="login__form" id="form-connexion">
+ 
   <div class="login_input_group">
     <label for="email" class="login_label">Entrez votre email </label>
    <div class="login-icon-input-container">
      <input type="email"
-     id="email"
+     id="email-inscription"
      name="email"
       placeholder="vous@example.com"
       maxlength="24"
@@ -50,10 +50,10 @@
   </div>
 
   <div class="login_input_group">
-    <label for="email" class="login_label">Entrez votre mot de passe</label>
+    <label for="password" class="login_label">Entrez votre mot de passe</label>
    <div class="login-icon-input-container">
      <input type="password"
-     id="password"
+     id="password-inscription"
      name="password"
       placeholder="vous@example.com"
       maxlength="24"
@@ -62,7 +62,7 @@
    
     </div>
     
-    <button type="submit" class="login_submit_button">Se connecter <i class="fa-solid fa-arrow-right"></i></button>
+    <button type="submit" class="login_submit_button" >Se connecter <i class="fa-solid fa-arrow-right"></i></button>
     <div class="divider">
       <span>ou continuer avec</span>
     </div>
@@ -75,7 +75,7 @@
     </div>
     
 <!-- Formulaire 2 : Inscription (caché au départ) -->
-  <div class="sign_up" style="display: none;">
+<div class="sign_up" id="form-inscription" >
 
     <h1 class="sign_up_title">Inscrivez-Vous</h1>
     <form action="" class="sign_up__form">
@@ -91,9 +91,7 @@
          class="sign_up_input">
         <img src="Asset/check.svg" alt="" class="sign-up-icon"> 
       </div>
-
        <p class="sign_up_error_message">Choisissez un pseudo contenant au moins 3 caractères</p>
-
       </div>
 
 
@@ -143,14 +141,12 @@
           <img src="Asset/check.svg" alt="" class="sign-up-icon">
 
        </div>
-        <p class="sign_up_error_message">Les mots de passe ne sont identique </p>
+        <p class="sign_up_error_message">Les mots de passe ne sont pas identiques</p>
        </div>
-       <button type="submit" class="sign_up_submit_button">Création du compte →</button>
+       <button type="submit" class="sign_up_submit_button" id="btn-submit-connexion" >Création du compte →</button>
     </form>
     </div>
-  
   </div> 
-  </div>
 </main>
 
 
