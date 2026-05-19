@@ -31,8 +31,8 @@
   <div class="login">
 
     <div class="tab-switch">
-      <button class="btn_connexion"  id="btn-connexion">Connexion</button>
-      <button class="btn_sign_up" id="btn-inscription">Inscription</button>
+      <button class="btn_connexion"  id="btn-connexion" type="button">Connexion</button>
+      <button class="btn_sign_up" id="btn-inscription" type="button">Inscription</button>
     </div>
 
  <form action="" method="post" class="login__form" id="form-connexion">
@@ -41,7 +41,7 @@
     <label for="email" class="login_label">Entrez votre email </label>
    <div class="login-icon-input-container">
      <input type="email"
-     id="email-inscription"
+     id="email"
      name="email"
       placeholder="vous@example.com"
       maxlength="24"
@@ -53,9 +53,9 @@
     <label for="password" class="login_label">Entrez votre mot de passe</label>
    <div class="login-icon-input-container">
      <input type="password"
-     id="password-inscription"
+     id="password"
      name="password"
-      placeholder="vous@example.com"
+      placeholder="••••••••"
       maxlength="24"
       class="login_input">
    </div>
@@ -70,15 +70,15 @@
     <img src="Asset/Google_logo.svg.png" width="18">
     <span>Continuer avec Google</span>
     </button>
-
    </form>
-    </div>
+ 
     
 <!-- Formulaire 2 : Inscription (caché au départ) -->
-<div class="sign_up" id="form-inscription" >
 
-    <h1 class="sign_up_title">Inscrivez-Vous</h1>
-    <form action="" class="sign_up__form">
+    <form action="" 
+    class="sign_up__form sign_up" 
+    id="form-inscription" 
+    style="display: none;">
 
       <div class="sign_up_input_group">
        <label for="username" class="sign_up_label">Nom d'utilisateur</label>
@@ -101,7 +101,7 @@
         <label for="email" class="sign_up_label">Entrez votre email </label>
        <div class="sign-up-icon-input-container">
          <input type="email"
-         id="email"
+         id="email-inscription"
          name="email"
           placeholder="vous@example.com"
           maxlength="24"
@@ -118,9 +118,9 @@
        <div class="sign-up-icon-input-container">
          <input 
          type="password"
-         id="password"
+         id="password-inscription"
          name="password"
-          placeholder="Votre mot de passe"
+          placeholder="••••••••"
           maxlength="24"
           class="sign_up_input">
           <img src="Asset/check.svg" alt="" class="sign-up-icon">
@@ -145,10 +145,9 @@
        </div>
        <button type="submit" class="sign_up_submit_button" id="btn-submit-connexion" >Création du compte →</button>
     </form>
-    </div>
   </div> 
 </main>
 
-
+<script src="login.js"></script>
 </body>
 </html>
