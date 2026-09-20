@@ -23,7 +23,6 @@ body{
 .sign_up_page{
     min-height: 100vh;
     background-color:#F5F0E8;
- 
 }
 
 .logo-mark{
@@ -56,54 +55,74 @@ margin-bottom: 15px;
 }
 p{
 text-align: center;
-color: #78716C;
+color: var(--ink);
 font-weight: 400;
-font-size:20px ;
+font-size:28px ;
+font-family: 'DM Serif Display', serif;
+letter-spacing: -.5px;
 
 }
 .login{
     background-color:white ;
     max-width:550px ;
-    border-radius:15px;
+    border-radius:20px;
     margin: 30px auto;
-    padding: 30px;
+    padding: 36px 32px;
     box-shadow: 0 8px 40px rgba(0,0,0,0.07), 
     4px 4px 0px #E0D9CE;
     border: 1.5px solid #E0D9CE;
+}
 
+.login_error{
+color: red;
+font-size: 13px;
+margin-top: 6px;
+display: none ;
 }
 .tab-switch{
 width: 100%;
 margin: 30px auto;
 display: flex;
 justify-content: space-around;
-background-color: #F5F0E8;
+background-color: var(--cream);
 padding: 10px;
 border-radius: 15px;
 cursor: pointer;
 }
-.login_input_group{
-    margin-bottom: 30px;
-}
-.btn_connexion,
-.btn_sign_up {
-  border: none;
-  font-size: 16px;
-  color: var(--muted);
-  background-color: transparent;
-  padding: 8px 24px;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
 .btn_connexion.active,
 .btn_sign_up.active {
   background-color: white;
   color: var(--ink);
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
+.login_input_group{
+    margin-bottom: 30px;
+}
+.login_input_group label {
+    color: #78716C;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: block;
+    letter-spacing: .08em; 
+}
+
+.btn_connexion,
+.btn_sign_up {
+  border: none;
+  font-size: 20px;
+  color: var(--muted);
+  background-color: transparent;
+  padding: 12px 38px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
     .login_input{
     padding: 20px;
     width:100%; 
@@ -115,6 +134,9 @@ cursor: pointer;
     outline: none ;
     display: block;
 
+    }
+    .login-icon-input-container{
+        position: relative;
     }
     .login_input:-webkit-autofill{
       -webkit-box-shadow: 0 0 0 1000px #F5F0E8 inset !important;
@@ -131,19 +153,25 @@ cursor: pointer;
         background-color: white;
         box-shadow: 0 1px 0 #4A7C59;
         }
-     .login_label{
-        color: #78716C;
-        font-weight: 520;
-        cursor: pointer;
-        font-size: 20px;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        display: block;
-
-    }
+    
     .fa-arrow-right{
         font-size: 10px;
         font-weight: 900;
+    }
+
+    .fa-eye,
+    .fa-eye-slash {
+     position: absolute;
+     right: 15px;
+     top: 50%;
+     transform: translateY(-50%);
+     cursor: pointer;
+     color: var(--muted);
+     font-size: 16px;
+    }
+    .fa-eye:hover,
+    .fa-eye-slash:hover{
+    color: var(--ink);
     }
     .btn-google{
     padding: 20px;
@@ -221,29 +249,19 @@ cursor: pointer;
     }
 /****************Inscription***********************/
 
-.sign_up{
-    max-width: 550px;
-    background-color: white;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.07), 
-    4px 4px 0px #E0D9CE;
-    border-radius: 15px ;
-    margin:  30px auto;
-    padding:  30px ;
-    color: #78716C;
-    
-}
 
 .sign_up_input_group{
  margin-bottom: 27px;
 }
 .sign_up_label{
     color: #78716C;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
     font-size: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
     display: block;
+    letter-spacing: .08em; 
 
 }
 .sign_up_input{
@@ -259,7 +277,7 @@ cursor: pointer;
 
 }
 .sign_up_input:-webkit-autofill{
-    -webkit-box-shadow: 0 0 0 1000px #F5F0E8 inset !important;
+ -webkit-box-shadow: 0 0 0 1000px #F5F0E8 inset !important;
 -webkit-text-fill-color: #78716C;
 }
 .sign_up_input:focus{

@@ -16,3 +16,31 @@ btnInscription.addEventListener('click', function () {
     btnInscription.classList.add('active')
     btnConnexion.classList.remove('active')
 })
+
+formConnexion.addEventListener('submit', function(e) {
+e.preventDefault()
+    
+const email= document.getElementById('email');
+const emailError= document.getElementById('email-error');
+const password= document.getElementById('password');
+
+// Vérifier email
+if(email.value === ''|| !email.value.includes('@')){
+    emailError.style.display='block'
+    return
+} 
+
+emailError.style.display='none'
+
+
+  // Vérifier mot de passe
+  if(password.value === ''){
+    alert('Veuillez entrer votre mot de passe')
+    return 
+  }
+if(password.value.length < 6){
+    alert('Le mot de passe doit contenir au moins 6 caractères')
+}
+
+window.location.href='index.html'
+})

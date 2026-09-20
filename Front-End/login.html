@@ -46,6 +46,9 @@
       placeholder="vous@example.com"
       maxlength="24"
       class="login_input">
+      <p class="login_error" id="email-error">
+        Veuillez entrer votre email
+      </p>
    </div>
   </div>
 
@@ -58,6 +61,10 @@
       placeholder="••••••••"
       maxlength="24"
       class="login_input">
+      <p class="login_error" id="password-error">
+        Veuillez entrer votre mot de passe      </p>
+        <i class="fa-regular fa-eye" id="toggle-password"></i>
+
    </div>
    
     </div>
@@ -76,7 +83,7 @@
 <!-- Formulaire 2 : Inscription (caché au départ) -->
 
     <form action="" 
-    class="sign_up__form sign_up" 
+    class="sign_up__form" 
     id="form-inscription" 
     style="display: none;">
 
