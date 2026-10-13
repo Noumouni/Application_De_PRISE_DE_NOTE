@@ -29,7 +29,6 @@ if(email.value === ''|| !email.value.includes('@')){
     emailError.style.display='block'
     return
 } 
-
 emailError.style.display='none'
 
 
@@ -40,7 +39,45 @@ emailError.style.display='none'
   }
 if(password.value.length < 6){
     alert('Le mot de passe doit contenir au moins 6 caractères')
+    return 
 }
 
 window.location.href='index.html'
+})
+
+const inscription= document.getElementById('password-inscription');
+const repeatPassword= document.getElementById('repeat-password');
+
+if(inscription.value !== repeatPassword.value){
+  alert('Les mots de passe ne sont pas identiques')
+
+}
+
+const togglePassword= document.getElementById('toggle-password');
+togglePassword.addEventListener('click', function() {
+  if (password.type === 'password') {
+    password.type = 'text'           // mot de passe visible
+    togglePassword.classList.remove('fa-eye')
+    togglePassword.classList.add('fa-eye-slash') // œil barré
+  } else {
+    password.type = 'password'       // mot de passe caché
+    togglePassword.classList.remove('fa-eye-slash')
+    togglePassword.classList.add('fa-eye') // œil normal
+  }
+})
+
+
+const togglePasswordInscription = document.getElementById('toggle-password-inscription')
+const passwordInscription = document.getElementById('password-inscription')
+
+togglePasswordInscription.addEventListener('click', function() {
+  if (passwordInscription.type === 'password') {
+    passwordInscription.type = 'text'
+    togglePasswordInscription.classList.remove('fa-eye')
+    togglePasswordInscription.classList.add('fa-eye-slash')
+  } else {
+    passwordInscription.type = 'password'
+    togglePasswordInscription.classList.remove('fa-eye-slash')
+    togglePasswordInscription.classList.add('fa-eye')
+  }
 })

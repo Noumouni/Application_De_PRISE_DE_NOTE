@@ -274,6 +274,7 @@ cursor: pointer;
     background: #F5F0E8;
     outline: none ;
     display: block;
+    position: relative;
 
 }
 .sign_up_input:-webkit-autofill{

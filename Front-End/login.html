@@ -40,7 +40,8 @@
   <div class="login_input_group">
     <label for="email" class="login_label">Entrez votre email </label>
    <div class="login-icon-input-container">
-     <input type="email"
+     <input 
+     type="email"
      id="email"
      name="email"
       placeholder="vous@example.com"
@@ -55,19 +56,19 @@
   <div class="login_input_group">
     <label for="password" class="login_label">Entrez votre mot de passe</label>
    <div class="login-icon-input-container">
-     <input type="password"
+     <input 
+     required
+     type="password"
      id="password"
      name="password"
       placeholder="••••••••"
       maxlength="24"
       class="login_input">
       <p class="login_error" id="password-error">
-        Veuillez entrer votre mot de passe      </p>
-        <i class="fa-regular fa-eye" id="toggle-password"></i>
-
-   </div>
-   
-    </div>
+       Veuillez entrer votre mot de passe      </p>
+      <i class="fa-regular fa-eye" id="toggle-password"></i>
+      </div>
+      </div>
     
     <button type="submit" class="login_submit_button" >Se connecter <i class="fa-solid fa-arrow-right"></i></button>
     <div class="divider">
@@ -90,13 +91,13 @@
       <div class="sign_up_input_group">
        <label for="username" class="sign_up_label">Nom d'utilisateur</label>
       <div class="sign-up-icon-input-container">
-        <input type="text"
+        <input 
+        type="text"
         id="username"
         name="username"
          placeholder="Alice Dupont"
          maxlength="24"
-         class="sign_up_input">
-        <img src="Asset/check.svg" alt="" class="sign-up-icon"> 
+         class="sign_up_input"> 
       </div>
        <p class="sign_up_error_message">Choisissez un pseudo contenant au moins 3 caractères</p>
       </div>
@@ -113,7 +114,6 @@
           placeholder="vous@example.com"
           maxlength="24"
           class="sign_up_input">
-          <img src="Asset/check.svg" alt="" class="sign-up-icon">
        </div>
         <p class="sign_up_error_message">Rentrez un email valide </p>
        </div>
@@ -130,9 +130,9 @@
           placeholder="••••••••"
           maxlength="24"
           class="sign_up_input">
-          <img src="Asset/check.svg" alt="" class="sign-up-icon">
+          <i class="fa-regular fa-eye" id="toggle-password-inscription"></i>
        </div>
-        <p class="sign_up_error_message">Respectez les condition du mot de passe</p>
+        <p class="sign_up_error_message">Respectez les condition du mot de passe</p> 
        </div>
   
        <div class="sign_up_input_group">
@@ -145,10 +145,10 @@
           placeholder="Confirmez le mot de passe"
           maxlength="24"
           class="sign_up_input">
-          <img src="Asset/check.svg" alt="" class="sign-up-icon">
-
+          <i class="fa-regular fa-eye" id="toggle-password-inscription"></i>
        </div>
         <p class="sign_up_error_message">Les mots de passe ne sont pas identiques</p>
+      
        </div>
        <button type="submit" class="sign_up_submit_button" id="btn-submit-connexion" >Création du compte →</button>
     </form>

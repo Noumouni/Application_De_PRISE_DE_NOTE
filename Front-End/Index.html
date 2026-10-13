@@ -30,65 +30,69 @@
     </header>
 
      <div class="app__layout">
-     <aside class="sidebar">
-      <div class="sidebar__content">
-        <div class="sidebar__content__navigation">
-          <p class="sidebar__content__title">NAVIGATION</p>
-          <div class="navigation__content__active ">
-          <div class="navigation__content__icone">
+
+        <aside class="sidebar">
+
+        <div class="sidebar-section">
+          <h1 class="sidebar__section__title">NAVIGATION</h1> 
+          <div class="sidebar__section__active">
             <i class="fa-solid fa-qrcode"></i>
             <p>Toutes les notes</p>
-            </div>
-            <span class="active">12</span>
+            <span class="active number">12</span>
           </div>
 
+
           <div class="navigation__content">
-            <div class="navigation__content__icone">
+            <div class="navigation__content_items">
             <i class="fa-regular fa-user"></i>
             <p>Partagées avec moi</p>
           </div>
             <span class="number" >4</span>
           </div>
 
-          <div class="navigation__content">
-            <div class="navigation__content__icone">
-            <i class="fa-regular fa-star"></i>
-            <p>Favoris</p>
-            </div>
-            <span class="number" >3</span>
-          </div>
 
           <div class="navigation__content">
-            <div class="navigation__content__icone">
+            <div class="navigation__content_items">
+            <i class="fa-regular fa-star"></i>
+            <p>Favoris</p>
+          </div>
+            <span class="number" >3</span>
+          </div>
+      
+
+          <div class="navigation__content">
+            <div class="navigation__content_items">
             <i class="fa-regular fa-trash-can"></i>
             <p>Corbeille</p>
           </div>
+            <span class="number" >3</span>
           </div>
-        </div>
+       
 
         <!-- Workspaces  -->
 
-        <div class="sidebar__workSpaces">
-          <p class="sidebar__workSpaces__title">WORKSPACES</p>
+        <div class="sidebar-section">
+          <p class="sidebar__section__title">WORKSPACES</p>
 
           <div class="sidebar__workSpaces__content">
-          <div class="Workspaces__bloc">
+          <div class="Workspaces__items">
             <span class="dot__WorkSpaces__Green workspaces__Dry"></span>
             <p>Projet Startup</p>
           </div>
-          <div class="Workspaces__bloc">
+          <div class="Workspaces__items">
             <span class="dot__WorkSpaces__orange workspaces__Dry"></span>
             <p>Personnel</p>
           </div>
-          <div class="Workspaces__bloc">
+          <div class="Workspaces__items">
             <span class="dot__WorkSpaces__blue workspaces__Dry"></span>
             <p>Équipe Design</p>
           </div>
           </div>
         </div>
         <!-- Tags  -->
-        <div class="sidebar__Tags">
-          <p class="sidebar__Tags__title">TAGS</p>
+        <div class="sidebar-section">
+          <p class="sidebar__section__title">TAGS</p>
+          
           <div class="sidebar__Tags__content">
             <div class="dot__bloc">
               <div class="dot__bloc__items">
@@ -125,22 +129,23 @@
     </aside>
 
     <main class="main-page">
-        <div class="All__note">
-            <h1 class="All__note__title">Toutes les notes</h1>
-            <div class="All__note__actions">
-            <div class="All__note__search__icone">
+        <div class="content_header">
+            <h2 class="content_header_title">Toutes les notes</h2>
+            
+            <div class="search_bar">
             <i class="fa-solid fa-magnifying-glass"></i>
               <input type="search"
-               name="search" id="search"
-                placeholder="Rechercher une note..."
-                class="search__input">
+               name="search" 
+               id="search"
+               placeholder="Rechercher une note...">
               </div>
+
               <button class="Add__note">
                 <i class="fa-solid fa-plus"></i>
                 <span>Nouvelle note</span>
               </button>
             </div>
-             </div>
+        
 
 
              <div class="Cards">
